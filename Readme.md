@@ -1,6 +1,6 @@
 ### Enhancing Dementia Diagnosis: A Comprehensive Evaluation of Text, Imaging, and Multimodal Data Integration in Machine Learning Models
 
 Datasets : 
-- (Image Data)[https://www.kaggle.com/datasets/phamnguyenduytien/2classesalzheimers]
-- (Text Data)[https://www.kaggle.com/datasets/fatemehmehrparvar/dementia]
+- [Image Data](https://www.kaggle.com/datasets/phamnguyenduytien/2classesalzheimers)
+- [Text Data](https://www.kaggle.com/datasets/fatemehmehrparvar/dementia)
 
