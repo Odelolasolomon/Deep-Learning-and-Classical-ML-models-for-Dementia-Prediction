@@ -2,5 +2,5 @@
 
 Datasets : 
 - [Tabular Data](https://www.kaggle.com/datasets/phamnguyenduytien/2classesalzheimers)
-- [Image Data](https://www.kaggle.com/datasets/fatemehmehrparvar/dementia)
+- [Tabular Data](https://www.kaggle.com/datasets/fatemehmehrparvar/dementia)
 
