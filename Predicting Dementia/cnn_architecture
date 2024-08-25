@@ -1,0 +1,40 @@
+digraph {
+	size="12,8"
+	ratio=fill
+	rankdir=LR
+	Input [label="Input Image (3 channels)"]
+	Conv1 [label="Conv2D(3, 32, kernel=3, padding=1)"]
+	ReLU1 [label=LeakyReLU]
+	BN1 [label="BatchNorm2D(32)"]
+	Pool1 [label="MaxPool2D(kernel=2)"]
+	Conv2 [label="Conv2D(32, 64, kernel=3, padding=1)"]
+	ReLU2 [label=LeakyReLU]
+	BN2 [label="BatchNorm2D(64)"]
+	Pool2 [label="MaxPool2D(kernel=2)"]
+	Conv3 [label="Conv2D(64, 128, kernel=3, padding=1)"]
+	ReLU3 [label=LeakyReLU]
+	BN3 [label="BatchNorm2D(128)"]
+	Pool3 [label="MaxPool2D(kernel=2)"]
+	Flatten [label=Flatten]
+	FC1 [label="Linear(128 * 8 * 8, 256)"]
+	ReLU4 [label=LeakyReLU]
+	Dropout [label="Dropout(0.5)"]
+	Output [label="Linear(256, num_classes)"]
+	Input -> Conv1
+	Conv1 -> ReLU1
+	ReLU1 -> BN1
+	BN1 -> Pool1
+	Pool1 -> Conv2
+	Conv2 -> ReLU2
+	ReLU2 -> BN2
+	BN2 -> Pool2
+	Pool2 -> Conv3
+	Conv3 -> ReLU3
+	ReLU3 -> BN3
+	BN3 -> Pool3
+	Pool3 -> Flatten
+	Flatten -> FC1
+	FC1 -> ReLU4
+	ReLU4 -> Dropout
+	Dropout -> Output
+}
